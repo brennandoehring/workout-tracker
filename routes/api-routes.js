@@ -36,6 +36,7 @@ app.put("/api/workout/:id", (req, res) => {
         res.json(dbWorkout);
     })
     .catch(err => {
+        console.log(err);
         res.status(400).json(err);
     });
     console.log("Added an exercise!");
