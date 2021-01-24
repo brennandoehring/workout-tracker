@@ -42,7 +42,7 @@ app.put("/api/workout/:id", (req, res) => {
 });
 
 // GETs workouts for the graphs and charts
-app.get("/api/workouts/range", (req, res) => {
+app.get("/api/workout/range", (req, res) => {
     Workout.find({})
     .then(dbWorkout => {
         res.json(dbWorkout);
