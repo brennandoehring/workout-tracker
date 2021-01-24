@@ -12,3 +12,5 @@ app.post("/api/workout", ({ body }, res) => {
     });
     console.log("Added new workout!");
 });
+
+module.exports = app;
